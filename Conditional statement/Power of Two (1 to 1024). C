@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    int num;
+    printf("Enter number: ");
+    scanf("%d", &num);
+
+    if (num >= 1 && num <= 1024 && (num & (num - 1)) == 0)
+        printf("Power of Two");
+    else
+        printf("Not Power of Two");
+
+    return 0;
+}
