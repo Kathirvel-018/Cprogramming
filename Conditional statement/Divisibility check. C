@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int n;
+    printf("Enter an integer: ");
+    scanf("%d", &n);
+
+    if (n % 8 == 0 && n % 1 == 0)
+        printf("Hey\n");
+    else if (n % 1 == 0)
+        printf("Hi\n");
+    else if (n % 8 == 0)
+        printf("Wow\n");
+    else
+        printf("%d\n", n);
+
+    return 0;
+}
