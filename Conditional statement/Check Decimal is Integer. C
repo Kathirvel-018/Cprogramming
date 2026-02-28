@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    float num;
+    printf("Enter a decimal number: ");
+    scanf("%f", &num);
+
+    if (num >= 25.0 && num <= 50.0 && num == (int)num)
+        printf("It is an integer within range.");
+    else
+        printf("Not an integer within range.");
+
+    return 0;
+}
